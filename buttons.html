@@ -1,0 +1,48 @@
+<html>
+ <head><title>buttons</title>
+ <script language="JavaScript">
+<!-- Hide from non-JavaScript browsers
+ function moveover(txt)
+ {
+    window.status=txt;
+    setTimeout("erase()",5000);
+ }
+
+ function erase()
+ {
+    window.status="";
+ }
+// -->
+ </script>
+ </head>
+
+
+
+
+ <body bgcolor="#ffcc00">
+  <center>
+  <font size=3>
+
+<!-- Buttonbar for a frame. Moving mouse over a link shows text in status bar for (up to) 5s -->
+<!-- External links from within frames need to include target="_top", to exit the frame -->
+<!-- Internal links from one frame to another need to indicate the "target" -->
+  <p><a href="index.html" target="_top" onMouseOver="moveover('The Dreamtime homepage');return true;">Dreamtime</a></p>
+  <p><a href="home_fra.html" target="main" onMouseOver="moveover('Mark : homepage');return true;">Homepage</a></p>
+
+  <hr width=50% size=2>
+
+  <strong>
+   <p><a href="sport.html" target="main" onMouseOver="moveover('News/ rumours for Arsenal and Ajax');return true;">Sport</a></p><br>
+   <p><a href="invest.html" target="main" onMouseOver="moveover('Up-to-date market news and discussions');return true;">Investment News</a></p><br>
+   <p><a href="magic.html" target="main" onMouseOver="moveover('...a developer of PDA software and intelligent agents');return true;">General Magic</a></p><br>
+   <p><a href="tech.html" target="main" onMouseOver="moveover('...look at the digital age from differing perspectives');return true;">Hi-Tech 'Zines</a></p><br>
+   <p><a href="search.html" target="main" onMouseOver="moveover('WWW, Usenet, e-mail');return true;">Search Engines</a></p><br>
+   <p><a href="tv.html" target="main" onMouseOver="moveover('Friends and My So-Called Life, etc');return true;">Tv</a></p>
+  </strong>
+
+  <hr width=50% size=2>
+
+  <p>You can <a href="mailto:mark@dreamtim.demon.co.uk">e-mail</a> me if you like.</p>
+
+  </font></center></body>
+</html>

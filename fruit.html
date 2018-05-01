@@ -1,0 +1,117 @@
+<html>
+ <head><title>SIMON's fruit double-entendres Page</title>
+ <script language="JavaScript">
+<!-- Hide from non-JavaScript browsers. Code borrowed from "The Complete Idiot's Guide to JavaScript"
+
+ function random(maxValue)
+ {
+    day = new Date();
+    hour = day.getHours();
+    min = day.getMinutes();
+    sec = day.getSeconds();
+    return (((hour+1) * (min+1) * sec) % maxValue) + 1;
+ }
+
+ function MakeArray(size)
+ {
+    this.length = size;
+    for(var i = 1; i <= size; i++)
+    {
+       this[i] = 0;
+    }
+
+    return this;
+ }
+
+ function showRandom(field)
+ {
+    textArray = new MakeArray(13);
+    textArray[1] = "Pear";
+    textArray[2] = "Plums";
+    textArray[3] = "Cherry";
+    textArray[4] = "Banana";
+    textArray[5] = "Melons";
+    textArray[6] = "Peaches";
+    textArray[7] = "Nuts";
+    textArray[8] = "Something";
+    textArray[9] = "Something else";
+    textArray[10] = "Yet another one";
+    textArray[11] = "Number 11";
+    textArray[12] = "Number 12";
+    textArray[13] = "Number 13";
+
+    field.value = textArray[random(13)];
+ }
+
+//-->
+ </script>
+ </head>
+
+
+
+
+<!-- Coloured background shows up "form". (Form in its own table created too many blank lines) -->
+ <body bgcolor="#ffc0cb">
+ <center>
+  <strong><em><font size=6 color="#000000">Simon's Fruit Page</font></em></strong>
+  <hr width=80% size=4 noshade>
+ </center> 
+  <br>
+
+  <center>
+<!-- Table 1 : surrounds the others -->
+  <table border=0 width=90% cellpadding=0 bgcolor="#ffc0cb">
+
+   <tr>
+<!-- "Table" 2 : first vertical stretched picture ...LHS -->
+    <td width=20% rowspan=3 valign=top align=center>
+     <img src="images/jt_sk~7q.jpg" alt="Simon1" align=left width=100 height=440>
+    </td>
+
+<!-- "Table" 3 : text,then JavaScript "generator", then more text -->
+    <td width=60% valign=top align=left><font size=4>
+     <center><font size=3><em>
+      <strong>dou+ble en+ten+dre</strong> : n. <strong>1.</strong> a word, phrase, etc., that
+      can be interpreted in two ways, esp. one having one meaning that is indelicate.
+      <strong>2.</strong> the type of humour that depends upon this type of ambiguity.
+      [C17: from obsolete French: double meaning]
+     </em></font></center>
+     <hr width=80% size=2 noshade>
+     <p>*** This site is still under construction! ***</p>
+     <p><a href="http://www.adavids.demon.co.uk/carry/article.html">An introduction to Carry On</a>
+      and
+      <a href="http://www.adavids.demon.co.uk/carry/carry.html">Carry On-line</a>
+      don't seem to be available any more, so try
+      <a href="http://village.vossnet.co.uk/r/rhino/carry.html">Rhino's Carry On Laughing Page</a>
+      instead.</p>
+     <p>Some more text, to see how much I am able to write on one page. So far, so good,
+      but what happens when I go onto the next line? Still OK; but this is the limit.</p>
+
+<!-- Clicking button displays a "random" (clock-dependent) quote from the list in head -->
+     <center>
+     <form><br>
+      <input type="button" value="Click on this button"
+      onclick="showRandom(this.form.randomOut)">....but not too quickly
+      <br>&nbsp
+      <center><textarea name="randomOut" rows=2 cols=50 wrap></textarea></center>
+     </form></center>
+
+     <br>
+     <p>In a different vein are
+      <a href="http://www.notam.uio.no/~hcholm/altlang/">The Alternative Dictionaries</a>
+      - more than 3,000 slang expressions in more than 70 languages. Add your own.</p>
+    </font></td>
+
+<!-- "Table" 4 : second vertical stretched picture ...RHS -->
+    <td width=20% rowspan=3 valign=top align=center>
+     <img src="images/j_turner.jpg" alt="Simon2" align=right width=100 height=440>
+    </td>
+   </tr>
+
+  </table>
+  </center>
+
+  <hr>
+  <center><font size=4>Return to the <a href="index.html">Dreamtime homepage</a></font></center>
+ </body>
+</html>
